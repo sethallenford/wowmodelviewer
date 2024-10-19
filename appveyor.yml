@@ -13,7 +13,7 @@ build_script:
 - cmd: >-
     cmake --build build --config Release --target release
     
-    cd C:\projects\wowmodelviewer\bin
+    cd D:\src\wowmodelviewer\bin
 
     ren WMV_Installer.exe WMV_Installer_v%APPVEYOR_BUILD_VERSION%.exe
 
