@@ -1,5 +1,5 @@
 version: 0.10.0.{build}
-image: Visual Studio 2017
+image: Visual Studio 2022
 
 clone_script:
 - cmd: >-
@@ -7,7 +7,7 @@ clone_script:
 
 before_build:
 - cmd: >-
-    cmake -B build -G "Visual Studio 15 2017" -DBUILDNUMBER=%APPVEYOR_BUILD_NUMBER%
+    cmake -B build -G "Visual Studio 17 2022" -DBUILDNUMBER=%APPVEYOR_BUILD_NUMBER%
 
 build_script:
 - cmd: >-
